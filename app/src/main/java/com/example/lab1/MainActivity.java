@@ -3,16 +3,21 @@ package com.example.lab1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.Context;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button vk_link = (Button) findViewById(R.id.vk_link);
@@ -23,7 +28,12 @@ public class MainActivity extends AppCompatActivity {
             String name = intent.getStringExtra("name");
             TextView text2 = (TextView) findViewById(R.id.textView2);
             if (!(name.isEmpty())) {
-                text2.setText(name + ", this is your VK-link");
+                if (Locale.getDefault().getLanguage() == "ru")
+                {
+                    text2.setText(name + ", Это ваша ссылка на ВК страницу");
+                }
+                else{
+                text2.setText(name + ", this is your VK-link");}
                 text2.setVisibility(View.VISIBLE);
             }
         }
@@ -56,5 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 }

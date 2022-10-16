@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Лабораторная №2</string>
+    <string name="Hello">Привет! Это приложение - вторая лабораторная работа в Android Studio!</string>
+    <string name="Lets">Давай познакомимся!</string>
+    <string name="vk">ВК</string>
+    <string name="vk_link">Это твоя ссылка на ВК страницу</string>
+    <string name="enter_personal_link">Введи свой id или личную ссылку на страницу ВКонтакте</string>
+    <string name="done">ГОТОВО</string>
+    <string name="back">Хорошо, теперь ты можешь вернуться назад</string>
+    <string name="name">имя</string>
+    <string name="link">ссылка</string>
+
+</resources>

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Lab1</string>
+    <string name="Hello">Hello! This application is the first Android Studio lab!</string>
+    <string name="Lets">Let\'s get acquainted!</string>
+    <string name="vk">VK</string>
+    <string name="vk_link">This is your VK-link</string>
+    <string name="enter_personal_link">Enter your id or personal link to the VK page</string>
+    <string name="done">DONE</string>
+    <string name="back">OK, now u can back</string>
+    <string name="name">name</string>
+    <string name="link">link</string>
+
+
 </resources>

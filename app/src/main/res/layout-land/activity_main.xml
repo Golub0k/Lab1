@@ -8,12 +8,14 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="331dp"
-        android:layout_height="71dp"
+        android:layout_width="550dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/Hello"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,14 +24,14 @@
         android:layout_width="219dp"
         android:layout_height="63dp"
         android:layout_marginStart="97dp"
-        android:layout_marginTop="175dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="97dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="30dp"
         android:text="@string/Lets"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/vk_link"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -37,16 +39,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="162dp"
-        android:layout_marginBottom="109dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTintMode="add"
         android:text="@string/vk"
         android:textAlignment="center"
         android:visibility="invisible"
         app:cornerRadius="@android:dimen/app_icon_size"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/go_to_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -55,14 +58,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="146dp"
-        android:layout_marginTop="139dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="146dp"
-        android:layout_marginBottom="42dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/vk_link"
+        android:textAlignment="center"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/vk_link"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
