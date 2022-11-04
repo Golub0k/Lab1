@@ -26,6 +26,8 @@ public class Activity_2 extends AppCompatActivity {
         Button back = (Button) findViewById(R.id.back);
         EditText input_link = (EditText) findViewById(R.id.input_link);
         EditText edit_name = (EditText) findViewById(R.id.edit_name);
+        String ok = getResources().getString(R.string.ok);
+        String now_back = getResources().getString(R.string.now_back);
 
         View.OnClickListener onClikGoTo1 = new View.OnClickListener() {
             @Override
@@ -50,11 +52,9 @@ public class Activity_2 extends AppCompatActivity {
                                           {
                                               // сохраняем текст, введённый до нажатия Enter в переменную
                                               String strCatName = edit_name.getText().toString();
-                                              if (Locale.getDefault().getLanguage() == "ru")
-                                              {
-                                                  text_with_name.setText("Хорошо, "+ strCatName + ", теперь ты можешь вернуться назад");}
-                                              else {
-                                              text_with_name.setText("OK, "+ strCatName + ", now u can back");}
+
+                                              text_with_name.setText(ok+ strCatName + now_back);
+
                                               text_with_name.setVisibility(View.VISIBLE);
                                               return true;
                                           }

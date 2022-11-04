@@ -9,6 +9,8 @@
     <string name="back">OK, now u can back</string>
     <string name="name">name</string>
     <string name="link">link</string>
+    <string name="ok">OK, </string>
+    <string name="now_back">, now u can back</string>
 
 
 </resources>

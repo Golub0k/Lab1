@@ -23,17 +23,14 @@ public class MainActivity extends AppCompatActivity {
         Button vk_link = (Button) findViewById(R.id.vk_link);
         Button go_to_2 = (Button) findViewById(R.id.go_to_2);
         String link = "https://vk.com/";
+        String vk_link_string = getResources().getString(R.string.vk_link);
         if (getIntent().hasExtra("name")) {
             Intent intent = getIntent();
             String name = intent.getStringExtra("name");
             TextView text2 = (TextView) findViewById(R.id.textView2);
             if (!(name.isEmpty())) {
-                if (Locale.getDefault().getLanguage() == "ru")
-                {
-                    text2.setText(name + ", Это ваша ссылка на ВК страницу");
-                }
-                else{
-                text2.setText(name + ", this is your VK-link");}
+                text2.setText(name + vk_link_string);
+
                 text2.setVisibility(View.VISIBLE);
             }
         }

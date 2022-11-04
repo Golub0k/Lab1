@@ -9,5 +9,7 @@
     <string name="back">Хорошо, теперь ты можешь вернуться назад</string>
     <string name="name">имя</string>
     <string name="link">ссылка</string>
+    <string name="ok">Хорошо, </string>
+    <string name="now_back">, теперь ты можешь вернуться назад</string>
 
 </resources>
